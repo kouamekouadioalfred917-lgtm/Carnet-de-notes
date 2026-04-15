@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Mes Notes</title>
+  </head>
+  <body>
+
+    <header>
+      <h1>📚 Mon Carnet de Notes</h1>
+    </header>
+
+    <main>
+
+      <!-- Formulaire pour ajouter une note -->
+      <section>
+        <h2>Ajouter une note</h2>
+        <form>
+  <label>Matière :</label>
+  <input type="text" id="matiere" placeholder="Ex: Mathématiques">
+
+  <label>Note :</label>
+  <input type="number" id="note" placeholder="Ex: 15" min="0" max="20">
+
+  <label>Coefficient :</label>
+  <input type="number" id="coefficient" placeholder="Ex: 3" min="1">
+
+  <button type="button" onclick="ajouterNote()">Ajouter</button>
+</form>
+      </section>
+
+      <!-- Tableau des notes -->
+      <section>
+        <h2>Mes notes</h2>
+<table>
+  <tr>
+    <th>Matière</th>
+    <th>Note</th>
+    <th>Coefficient</th>
+    <th>Action</th>
+  </tr>
+  <tbody id="tableau-notes">
+  </tbody>
+</table>
+      </section>
+
+      <!-- Affichage de la moyenne -->
+      <section>
+        <h2>Moyenne générale</h2>
+        <p>Ta moyenne : <span class="moyenne" id="moyenne">--</span></p>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>Mon carnet de notes — 2026</p>
+    </footer>
+    
+<script src="script.js"></script>
+  </body>
+</html>
